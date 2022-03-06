@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <!-- Styling the overall website a color of beige -->
+       <style>
+           body {
+               background-color: beige;
+           }
+       </style>
+
+       <!-- Import the libraries needed for JQuery and scripts.js button presses -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="scripts.js"></script>
+       <title>Assignment 1</title>
+   </head>
+
+   <body>
+        <h1>Assignment 1!</h1> <br>
+
+        <!-- Button presses to get all the tweets and get the tweets user IDs-->
+        <button id="get-all-button"> GET All Tweet</button>
+        <button id="get-user-button"> GET All User</button>
+        <br> <br>
+
+        <!-- Entry to enter a given ID and button to get the tweet -->
+        <form id="get-tweet-button" method="post">
+            Enter ID: <input type="number" id="get-text">
+            <button> GET Tweet </button>
+        </form>
+        <br>
+
+        <!-- Entry to enter a given ID and button to delete the given tweet -->
+        <form id="delete-button" method="delete">
+            Enter ID: <input type="number" id="delete-text">
+            <button> DELETE </button>
+        </form>
+        <br>
+
+        <!-- Entries to enter a given ID and Text with button to create the tweet -->
+        <form id="create-form" method="post">
+            Enter ID: <input type="number" id="create-id-input">
+            Enter Text: <input type="text" id="create-text-input">
+            <button> CREATE </button>
+        </form>
+        <br>
+
+        <!-- Entries to enter a given name with new screen name with button
+         to update the tweet -->
+        <form id="update-button" method="put">
+            Enter Name: <input type="text" id="update-name">
+            Enter New Screen Name: <input type="text" id="update-screen-name">
+            <button> UPDATE </button>
+        </form>
+        <br>
+        <hr>
+
+        <!-- Create a table format for the output of the button presses -->
+        <table id="myTable" style="margin-left: auto; margin-right: auto;">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+
+   </body>
+</html>
