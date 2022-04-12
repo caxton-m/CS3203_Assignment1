@@ -1,8 +1,8 @@
 #specifying a base image: Nodejs
-FROM node:12.18.1
+FROM node:12.14.1
 
 #set a directory for the app
-WORKDIR /work
+WORKDIR /app
 # copy all the files to the container
 COPY . .
 # install dependencies
@@ -12,5 +12,4 @@ RUN npm install
 EXPOSE 3000
 
 # run the command
-CMD ["python", "./main.py"]
-
+CMD npm start
